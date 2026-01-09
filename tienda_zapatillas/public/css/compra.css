@@ -1,0 +1,61 @@
+/* ================= COMPRA REALIZADA ================= */
+
+.mensaje-ok {
+    max-width: 520px;
+    margin: 120px auto;
+    padding: 40px 30px;
+    background: #ffffff;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    animation: aparecer 0.4s ease;
+}
+
+/* Animación suave */
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.mensaje-ok h1 {
+    font-size: 28px;
+    color: #1a7a58;
+    margin-bottom: 15px;
+}
+
+.mensaje-ok h1::before {
+    content: "✔";
+    display: block;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.mensaje-ok p {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+/* Botón de volver */
+.mensaje-ok .btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #1a7a58;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+.mensaje-ok .btn:hover {
+    background: #145c43;
+    transform: scale(1.05);
+}

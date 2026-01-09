@@ -1,0 +1,4 @@
+Administrador
+email: admin@tienda.com
+Contraseña: admin123
+admin
